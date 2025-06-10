@@ -20,7 +20,6 @@ VellumCMS is designed for **charitable, mission-aligned organisations**, and mai
 ✅ **View and inspect the source code**  
 ✅ **Audit security, privacy, accessibility, and ethical practices**  
 ✅ **Suggest improvements via GitHub Issues or Discussions**  
-✅ **Use the hosted version at [vellumcms.org](https://vellumcms.org) as a verified charity**  
 ✅ **Share links to this repository or quote its structure for reference**
 
 ---
@@ -59,7 +58,7 @@ Please read the `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` before submitting pul
 ## License Summary
 
 This is a **source-available license** intended for transparency, not redistribution.  
-For use cases beyond inspection and learning, contact us at [team@vellumworks.com](mailto:team@vellumworks.com).
+For use cases beyond inspection and learning, contact us at [support@vellumworks.com](mailto:support@vellumworks.com).
 
 ---
 
