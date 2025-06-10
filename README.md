@@ -76,7 +76,7 @@ This project is provided under a **custom ethical use license**:
 - You may **not fork, redistribute, rebrand**, or use it for commercial purposes
 - You may **not** use this software to build platforms that involve advertising, surveillance, paywalls, or extractive data practices
 
-Full license details: [`LICENSE`](LICENSE)
+Full license details: [`LICENSE`](LICENSE.md)
 
 ---
 
