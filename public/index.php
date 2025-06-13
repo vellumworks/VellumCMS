@@ -31,15 +31,15 @@
 <section class="bg-[#F9FAFB] py-16 px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
         <div>
-            <h3 class="text-xl font-bold mb-2">💸 Subscription Traps</h3>
+            <h3 class="text-xl font-bold mb-2"> Subscription Traps</h3>
             <p class="text-gray-600">No paywalls. No usage limits. VellumCMS is free, always, for charities and mission-driven orgs.</p>
         </div>
         <div>
-            <h3 class="text-xl font-bold mb-2">🧱 Corporate Bloat</h3>
+            <h3 class="text-xl font-bold mb-2">Corporate Bloat</h3>
             <p class="text-gray-600">Built for simplicity. Say goodbye to unnecessary plugins, bloated dashboards, and endless tutorials.</p>
         </div>
         <div>
-            <h3 class="text-xl font-bold mb-2">🧍‍♀️ One-Size-Fits-None</h3>
+            <h3 class="text-xl font-bold mb-2">One-Size-Fits-None</h3>
             <p class="text-gray-600">Every org is different. VellumCMS adapts to you — multilingual, accessible, and modular.</p>
         </div>
     </div>
@@ -54,22 +54,22 @@
         <div class="grid md:grid-cols-2 gap-12 text-left">
 
             <div class="bg-[#F1F5FF] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
-                <h3 class="text-2xl font-bold text-[#4361EE] mb-2">📣 Rapid-Response Hubs</h3>
+                <h3 class="text-2xl font-bold text-[#4361EE] mb-2">Rapid-Response Hubs</h3>
                 <p class="text-gray-700">Launch urgent campaigns in minutes — petitions, emergency appeals, landing pages that rally support at speed and scale.</p>
             </div>
 
             <div class="bg-[#FFF7ED] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
-                <h3 class="text-2xl font-bold text-[#EA580C] mb-2">🌐 Multilingual Microsites</h3>
+                <h3 class="text-2xl font-bold text-[#EA580C] mb-2">Multilingual Microsites</h3>
                 <p class="text-gray-700">Speak to every part of your community — one site, every language. No duplicates, no plugins, just clean simplicity.</p>
             </div>
 
             <div class="bg-[#ECFDF5] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
-                <h3 class="text-2xl font-bold text-[#10B981] mb-2">🔐 Digital Safe Spaces</h3>
+                <h3 class="text-2xl font-bold text-[#10B981] mb-2">Digital Safe Spaces</h3>
                 <p class="text-gray-700">Build private or public support zones. Permission-based access, no surveillance, ethical data handling — built in.</p>
             </div>
 
             <div class="bg-[#FDF2F8] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
-                <h3 class="text-2xl font-bold text-[#DB2777] mb-2">✍️ Drag & Drop Publishing</h3>
+                <h3 class="text-2xl font-bold text-[#DB2777] mb-2">Drag & Drop Publishing</h3>
                 <p class="text-gray-700">Create your way. Reports, manifestos, resource libraries — all with intuitive blocks that feel like your voice, not a template.</p>
             </div>
 
@@ -126,7 +126,7 @@
         <div class="flex justify-center gap-4 flex-wrap">
             <a href="https://github.com/vellumworks/vellumcms" target="_blank"
                class="bg-white text-[#0f172a] px-6 py-2 rounded-full border hover:bg-gray-100 transition font-semibold">
-                📂 View on GitHub
+                View on GitHub
             </a>
             <a href="/get-started"
                class="bg-[#4361EE] text-white px-6 py-2 rounded-full hover:bg-[#364FC7] transition font-semibold">
