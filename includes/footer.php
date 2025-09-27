@@ -36,16 +36,16 @@
         <div>
             <h3 class="text-lg font-semibold text-black mb-4">Legal</h3>
             <ul class="space-y-2">
-                <li><a href="/terms" class="hover:underline">Terms of Use</a></li>
-                <li><a href="/cookies" class="hover:underline">Cookie Policy</a></li>
-                <li><a href="/privacy" class="hover:underline">Privacy Policy</a></li>
+                <li><a href="/legal/terms" class="hover:underline">Terms of Use</a></li>
+                <li><a href="/legal/cookie-policy" class="hover:underline">Cookie Policy</a></li>
+                <li><a href="/legal/privacy-policy" class="hover:underline">Privacy Policy</a></li>
             </ul>
         </div>
 
     </div>
 
     <div class="mt-12 border-t pt-6 text-center text-xs text-gray-500">
-        <p style="padding-bottom: 10px;">This is digital infrastructure for the people who care.</p>
-        <p>&copy; 2025 VellumCMS — Webiste by <a href="https://vellumworks.com" target="_blank" class="text-[#4361EE] hover:underline">VellumWorks</a></p>
+        <p style="padding-bottom: 10px;">Digital infrastructure for the people and communities most often overlooked.</p>
+        <p>&copy; 2025 VellumCMS — Website by <a href="https://vellumworks.com" target="_blank" class="text-[#4361EE] hover:underline">VellumWorks</a></p>
     </div>
 </footer>
