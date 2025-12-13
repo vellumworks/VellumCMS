@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>VellumCMS | The Web, Rewritten for Good</title>
+    <title>The Web, Rewritten for Good | VellumCMS</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <?php include '../includes/header.php'; ?>
@@ -13,7 +13,7 @@
 <section class="bg-[#0f172a] text-white py-24 px-6 text-center relative overflow-hidden">
     <div class="max-w-4xl mx-auto relative z-10">
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">The Web, Rewritten for Good.</h1>
-        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">Share your mission, accept donations, and reach the people who care — all with a website that’s free, flexible, and built for your cause.</p>
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">Share your mission, accept donations, and reach the people who care; all with a website that’s free, flexible, and built for your cause.</p>
         <a href="/get-started" class="bg-white text-[#0f172a] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Build a Better Website for Your Cause</a>
     </div>
     <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#4361EE] via-[#4895EF] to-[#4CC9F0] opacity-10 blur-3xl"></div>
@@ -23,7 +23,7 @@
 <section class="py-20 px-6 bg-white">
     <div class="max-w-5xl mx-auto text-center">
         <h2 class="text-3xl font-bold mb-4">This is a CMS That Helps.</h2>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto">VellumCMS exists because the nonprofit sector deserves tools that don’t exploit. Because ethical work shouldn’t come with unethical software. Because digital power should be freely available to those solving real problems.</p>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">VellumCMS exists because the nonprofit sector deserves tools that don’t exploit. Because ethical work shouldn’t come with unethical software. Because digital power should be freely available to those making an impact.</p>
     </div>
 </section>
 
@@ -32,7 +32,7 @@
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
         <div>
             <h3 class="text-xl font-bold mb-2"> Subscription Traps</h3>
-            <p class="text-gray-600">No paywalls. No usage limits. VellumCMS is free, always, for charities and mission-driven charity.</p>
+            <p class="text-gray-600">No paywalls. No usage limits. VellumCMS is free, always, for charities and mission-driven organisations.</p>
         </div>
         <div>
             <h3 class="text-xl font-bold mb-2">Corporate Bloat</h3>
@@ -49,28 +49,28 @@
 <section class="bg-white py-24 px-6">
     <div class="max-w-6xl mx-auto text-center">
         <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">What You’ll Build Isn’t Just a Website</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16">You’re here to move people. Shift systems. Tell the truth beautifully. VellumCMS gives you the tools — you bring the mission.</p>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16">You’re here to move people. Shift systems. Tell the truth. VellumCMS gives you the tools, you bring the mission.</p>
 
         <div class="grid md:grid-cols-2 gap-12 text-left">
 
             <div class="bg-[#F1F5FF] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
                 <h3 class="text-2xl font-bold text-[#4361EE] mb-2">Rapid-Response Hubs</h3>
-                <p class="text-gray-700">Launch urgent campaigns in minutes — petitions, emergency appeals, landing pages that rally support at speed and scale.</p>
+                <p class="text-gray-700">Launch urgent campaigns in minutes: petitions, emergency appeals, landing pages that rally support at speed and scale designed to your charity and needs.</p>
             </div>
 
             <div class="bg-[#FFF7ED] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
                 <h3 class="text-2xl font-bold text-[#EA580C] mb-2">Multilingual Microsites</h3>
-                <p class="text-gray-700">Speak to every part of your community — one site, every language. No duplicates, no plugins, just clean simplicity.</p>
+                <p class="text-gray-700">Speak to every part of your community. One site, every language. No duplicates, no plugins, just clean simplicity.</p>
             </div>
 
             <div class="bg-[#ECFDF5] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
                 <h3 class="text-2xl font-bold text-[#10B981] mb-2">Digital Safe Spaces</h3>
-                <p class="text-gray-700">Build private or public support zones. Permission-based access, no surveillance, ethical data handling — built in.</p>
+                <p class="text-gray-700">Build private or public support zones. Permission-based access, no surveillance, ethical data handling. All built in.</p>
             </div>
 
             <div class="bg-[#FDF2F8] p-8 rounded-2xl shadow-sm hover:shadow-md transition duration-200">
                 <h3 class="text-2xl font-bold text-[#DB2777] mb-2">Drag & Drop Publishing</h3>
-                <p class="text-gray-700">Create your way. Reports, manifestos, resource libraries — all with intuitive blocks that feel like your voice, not a template.</p>
+                <p class="text-gray-700">Create your way. Reports, manifestos, resource libraries, all with intuitive blocks that feel like your voice, not a template.</p>
             </div>
 
         </div>
@@ -83,15 +83,14 @@
 
         <!-- Feature Layer Stack -->
         <div class="relative space-y-24">
-
             <div class="bg-white p-10 rounded-xl shadow-xl border-l-[8px] border-[#4361EE] md:ml-0 ml-8 relative z-10">
                 <h3 class="text-2xl font-semibold mb-3 text-gray-800">Accessible by Design</h3>
-                <p class="text-gray-600 max-w-2xl">Everything from keyboard nav to contrast is considered. Not because it’s trendy — because everyone deserves a way in.</p>
+                <p class="text-gray-600 max-w-2xl">Everything from keyboard nav to contrast is considered. Everyone is included.</p>
             </div>
 
             <div class="bg-white p-10 rounded-xl shadow-xl border-l-[8px] border-[#0EA5E9] md:ml-8 ml-16 relative z-20">
                 <h3 class="text-2xl font-semibold mb-3 text-gray-800">No Plugins, No Clutter</h3>
-                <p class="text-gray-600 max-w-2xl">There’s nothing hiding behind a paywall. No endless add-ons. Just lean, modular tools made for mission-first work.</p>
+                <p class="text-gray-600 max-w-2xl">There’s nothing hiding behind a paywall - unless you want to have exclusive content. No endless add-ons. Just lean, modular tools made for mission-first work.</p>
             </div>
 
             <div class="bg-white p-10 rounded-xl shadow-xl border-l-[8px] border-[#10B981] md:ml-16 ml-24 relative z-30">
@@ -106,14 +105,13 @@
 
             <div class="bg-white p-10 rounded-xl shadow-xl border-l-[8px] border-[#DB2777] md:ml-32 ml-40 relative z-50">
                 <h3 class="text-2xl font-semibold mb-3 text-gray-800">Multilingual as Standard</h3>
-                <p class="text-gray-600 max-w-2xl">Languages aren't an add-on — they're foundational. One dashboard, infinite versions, zero plugin chaos.</p>
+                <p class="text-gray-600 max-w-2xl">Languages aren't an add-on, they're foundational for impact. One dashboard, infinite versions, zero plugin chaos.</p>
             </div>
 
             <div class="bg-white p-10 rounded-xl shadow-xl border-l-[8px] border-[#7C3AED] md:ml-40 ml-48 relative z-60">
                 <h3 class="text-2xl font-semibold mb-3 text-gray-800">Safe for Non-Technical Teams</h3>
-                <p class="text-gray-600 max-w-2xl">Set roles. Publish with confidence. Delegate without worry. Finally, a system that respects time and trust.</p>
+                <p class="text-gray-600 max-w-2xl">Set roles. Publish with confidence. Delegate without worry. Finally, a system that respects your time and trust.</p>
             </div>
-
         </div>
     </div>
 </section>
@@ -122,8 +120,8 @@
 <section class="bg-white py-24 px-6" id="key-features">
     <div class="max-w-6xl mx-auto">
         <div class="text-center mb-14">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">Key Features — Built for Real-World Impact</h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Everything you need to publish quickly, raise funds ethically, and run a trustworthy site — without plugins, bloat, or dark patterns.</p>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">Key Features: Built for Real-World Impact</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Everything you need to publish quickly, raise funds ethically, and run a trustworthy site, without plugins, bloat, or dark patterns.</p>
         </div>
 
         <!-- Feature grid -->
@@ -155,7 +153,7 @@
           </span>
                     <h3 class="text-xl font-bold text-[#10B981]">SEO, Structured Right</h3>
                 </div>
-                <p class="text-gray-700 mb-3">Clean markup, schema, fast pages. No gimmicks — just technical SEO done properly.</p>
+                <p class="text-gray-700 mb-3">Clean markup, schema, fast pages. Just technical SEO done properly, for free.</p>
                 <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
                     <li>Meta, Open Graph & social previews</li>
                     <li>Automatic JSON-LD for charity, events, and articles</li>
@@ -192,7 +190,7 @@
                 <p class="text-gray-700 mb-3">Delegate confidently with fine-grained permissions.</p>
                 <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
                     <li>Draft, Review, Approve, Publish states</li>
-                    <li>Role templates for small teams</li>
+                    <li>Role templates for all teams</li>
                     <li>Audit trail & version rollback</li>
                 </ul>
             </div>
@@ -242,7 +240,7 @@
                 </div>
                 <p class="text-gray-700 mb-3">Lean assets, CDN-friendly, and tuned for Core Web Vitals.</p>
                 <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
-                    <li>Image optimization & lazy-loading</li>
+                    <li>Image optimisation & lazy-loading</li>
                     <li>Minimal JS, server-rendered pages</li>
                     <li>Cache-first architecture</li>
                 </ul>
@@ -261,7 +259,7 @@
                 <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
                     <li>Contact, volunteer & intake forms</li>
                     <li>Simple supporter database & tags</li>
-                    <li>CSV export — your data, your rules</li>
+                    <li>CSV export: your data, your rules</li>
                 </ul>
             </div>
 
@@ -289,7 +287,7 @@
             <!-- plug icon -->
             <svg class="h-5 w-5 text-[#F59E0B]" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v6H5v4h6V2H7zm12 10h-4v10h4V12zM9 14H5v8h4v-8z"/></svg>
           </span>
-                    <h3 class="text-xl font-bold text-[#F59E0B]">Integrations — No Lock-In</h3>
+                    <h3 class="text-xl font-bold text-[#F59E0B]">Integrations with No Lock-In</h3>
                 </div>
                 <p class="text-gray-700 mb-3">Connect email, payments, maps, and more — swap anytime.</p>
                 <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
@@ -325,7 +323,7 @@
           </span>
                     <h3 class="text-xl font-bold text-[#10B981]">Host Anywhere</h3>
                 </div>
-                <p class="text-gray-700 mb-3">Run on your own server or a trusted provider — your data stays yours.</p>
+                <p class="text-gray-700 mb-3">Run on your own server or a trusted provider. Your data stays yours.</p>
                 <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
                     <li>Docker & standard PHP/MySQL support</li>
                     <li>Git-based deploys & staging</li>
@@ -349,7 +347,7 @@
 <section class="bg-[#E6F0FF] py-12 px-6 text-center relative overflow-hidden">
     <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold mb-4">VellumCMS is 100% Open Source.</h2>
-        <p class="text-gray-700 mb-6 text-lg">No hidden logic. No data traps. Just clean code, shared freely — so your charity stays in control, always.</p>
+        <p class="text-gray-700 mb-6 text-lg">No hidden logic. No data traps. Just clean code, shared freely, so your charity stays in control, always.</p>
         <div class="flex justify-center gap-4 flex-wrap">
             <a href="https://github.com/vellumworks/vellumcms" target="_blank"
                class="bg-white text-[#0f172a] px-6 py-2 rounded-full border hover:bg-gray-100 transition font-semibold">
@@ -368,7 +366,7 @@
 <section class="bg-[#0f172a] text-white py-24 text-center px-6">
     <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-bold mb-6">You’re Not Just Publishing. You’re Building the Future.</h2>
-        <p class="text-gray-300 text-lg mb-10">Every time you create with VellumCMS, you’re helping rewrite the digital playbook — for justice, access, and truth.</p>
+        <p class="text-gray-300 text-lg mb-10">Every time you create with VellumCMS, you’re helping rewrite the standards for justice, access, and truth.</p>
         <a href="/get-started" class="bg-white text-[#0f172a] font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition">Start Building</a>
     </div>
 </section>
