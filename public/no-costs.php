@@ -14,7 +14,7 @@
     <div class="max-w-4xl mx-auto relative z-10">
         <p class="text-sm uppercase tracking-widest text-[#4CC9F0] mb-3 font-semibold">Genuinely free</p>
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Zero Costs. No Catch.</h1>
-        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">VellumCMS is free for registered charities and nonprofits. Not a trial. Not a freemium tier. Just free — because your money belongs in your mission.</p>
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">VellumCMS is free for registered charities and nonprofits. Not a trial. Not a freemium tier. Just free because your money belongs in your mission.</p>
     </div>
     <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#4361EE] via-[#4895EF] to-[#4CC9F0] opacity-10 blur-3xl"></div>
 </section>
@@ -41,7 +41,7 @@
                 </span>
                 <div>
                     <p class="font-semibold text-gray-900">Donation & Fundraising Tools</p>
-                    <p class="text-sm text-gray-600">One-time, recurring, Gift Aid — all included</p>
+                    <p class="text-sm text-gray-600">One-time, recurring, Gift Aid. All included</p>
                 </div>
             </div>
             <div class="flex items-start gap-4 p-5 bg-[#F9FAFB] rounded-xl">
@@ -86,7 +86,7 @@
                 </span>
                 <div>
                     <p class="font-semibold text-gray-900">SEO & Structured Data</p>
-                    <p class="text-sm text-gray-600">Meta, Open Graph, JSON-LD — automatic</p>
+                    <p class="text-sm text-gray-600">Meta, Open Graph, JSON-LD. It is automatic.</p>
                 </div>
             </div>
             <div class="flex items-start gap-4 p-5 bg-[#F9FAFB] rounded-xl">
@@ -164,7 +164,7 @@
 <section class="bg-white py-24 px-6">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Why Is It Free?</h2>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">VellumCMS is built and maintained by VellumWorks — a mission-driven initiative to build ethical digital infrastructure for the public good.</p>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">VellumCMS is built and maintained by VellumWorks. A mission-driven initiative to build ethical digital infrastructure for the public good.</p>
         <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">We believe the digital barriers facing the charity sector are a justice issue. Charities spend money on website platforms that could be going directly to the people they serve. We're here to change that.</p>
         <p class="text-lg text-gray-700 max-w-2xl mx-auto">VellumCMS is free because it should be. We sustain the project through support from aligned partners, grants, and optional services for organisations with more complex needs. We will never introduce fees for core features.</p>
     </div>
@@ -174,7 +174,7 @@
 <section class="bg-[#F1F5FF] py-16 px-6">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Who Qualifies?</h2>
-        <p class="text-gray-700 text-lg max-w-2xl mx-auto mb-8">VellumCMS is available to registered charities, nonprofits, and mission-driven organisations. We verify eligibility at sign-up — it takes less than a minute.</p>
+        <p class="text-gray-700 text-lg max-w-2xl mx-auto mb-8">VellumCMS is available to registered charities, nonprofits, and mission-driven organisations. We verify eligibility at sign-up. It takes less than a minute.</p>
         <div class="grid md:grid-cols-3 gap-6 text-left">
             <div class="bg-white p-6 rounded-xl shadow-sm">
                 <h3 class="font-bold text-[#4361EE] mb-1">Registered Charities</h3>
