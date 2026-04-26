@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="../public/assets/styles.css">
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <header class="main-header">
     <div class="container">
