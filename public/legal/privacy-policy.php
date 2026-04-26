@@ -33,13 +33,14 @@
         <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">Information you provide directly</h3>
         <p class="text-gray-700 mb-4">When you apply for access or contact us, we collect your name, email address, and organisation details. We use this only to manage your account and provide support.</p>
 
-        <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">Technical data</h3>
-        <p class="text-gray-700 mb-4">When you use the VellumCMS platform, we collect minimal technical data including browser type and general usage patterns. We do not collect or store your IP address in identifiable form. We do not use cookies for tracking or advertising purposes.</p>
+        <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">Technical and analytics data</h3>
+        <p class="text-gray-700 mb-4">We use analytics tools, including Google Analytics, to understand how visitors use this site. This may include data such as pages visited, time on site, browser type, and approximate location. This data is collected in aggregate and used only to improve the platform. Analytics cookies are only set with your consent, which you can manage at any time via our <a href="/legal/cookie-policy" class="text-[#4361EE] hover:underline">Cookie Policy</a>.</p>
 
-        <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">What we do not collect</h3>
+        <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">What we do not do</h3>
         <ul class="text-gray-700 list-disc pl-6 mb-6 space-y-1">
-            <li>We do not use Google Analytics, Facebook Pixel, or any third-party tracking scripts</li>
-            <li>We do not profile users or build behavioural data</li>
+            <li>We do not use advertising or retargeting cookies</li>
+            <li>We do not sell or share your data with advertisers or data brokers</li>
+            <li>We do not build individual behavioural profiles for commercial purposes</li>
             <li>We do not collect data about your site's visitors beyond aggregate, anonymised counts</li>
         </ul>
 

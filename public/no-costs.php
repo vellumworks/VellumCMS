@@ -132,7 +132,7 @@
                     <tr>
                         <td class="py-4 pr-8 text-gray-700 font-medium">Donation Integration</td>
                         <td class="py-4 pr-8 text-center text-gray-500">1.5%–3% per donation</td>
-                        <td class="py-4 text-center font-bold text-[#10B981]">No platform fee</td>
+                        <td class="py-4 text-center font-bold text-[#10B981]">No platform fee*</td>
                     </tr>
                     <tr>
                         <td class="py-4 pr-8 text-gray-700 font-medium">Analytics Tool</td>
@@ -157,6 +157,7 @@
                 </tbody>
             </table>
         </div>
+        <p class="text-xs text-gray-400 mt-6">* VellumCMS charges no platform fee for donations. Payment processors (such as Stripe or PayPal) may apply their own transaction fees, which are set and controlled entirely by those providers.</p>
     </div>
 </section>
 
