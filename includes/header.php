@@ -21,7 +21,7 @@
 
         <!-- CTA Button -->
         <div class="cta">
-            <a href="/get-started" class="btn">Try it now!</a>
+            <a href="/get-started" class="btn">Join the waiting list!</a>
         </div>
     </div>
 </header>

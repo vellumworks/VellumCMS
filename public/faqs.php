@@ -33,15 +33,15 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">How do you verify eligibility?</h3>
-                    <p class="text-gray-600">For UK registered charities, we verify automatically using the Charity Commission API — just enter your charity number and we confirm your status in seconds. For other organisations, we may ask for brief confirmation of your non-profit status.</p>
+                    <p class="text-gray-600">For UK registered charities, we verify automatically using the Charity Commission API. Just enter your charity number and we confirm your status in seconds. For other organisations, we may ask for brief confirmation of your non-profit status.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Is it really free? What's the catch?</h3>
-                    <p class="text-gray-600">There's no catch. VellumCMS is genuinely free for eligible organisations — no hidden fees, no usage limits, no freemium tier. We sustain the project through support from aligned partners and optional services for organisations with complex needs. Core features will never cost money.</p>
+                    <p class="text-gray-600">There's no catch. VellumCMS is genuinely free for eligible organisations. No hidden fees, no usage limits, no freemium tier. We sustain the project through support from aligned partners and optional services for organisations with complex needs. Core features will never cost money.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">What if we're not a registered charity but do good work?</h3>
-                    <p class="text-gray-600">We assess informal community groups and campaign organisations case by case. <a href="/contact" class="text-[#4361EE] hover:underline">Get in touch</a> and tell us about your work — we're flexible and want to support as many mission-driven groups as possible.</p>
+                    <p class="text-gray-600">We assess informal community groups and campaign organisations case by case. <a href="/contact" class="text-[#4361EE] hover:underline">Get in touch</a> and tell us about your work, we're flexible and want to support as many mission-driven groups as possible.</p>
                 </div>
             </div>
         </div>
@@ -60,11 +60,11 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">How many team members can we add?</h3>
-                    <p class="text-gray-600">Unlimited. Every team member — staff, volunteers, trustees — can have an account with the appropriate level of access. We don't charge per seat.</p>
+                    <p class="text-gray-600">Unlimited. Every team member, staff, volunteers, trustees, can have an account with the appropriate level of access. We don't charge per seat.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Does VellumCMS support multiple languages?</h3>
-                    <p class="text-gray-600">Yes, and it's built in — not a plugin. You can publish in as many languages as your community needs from a single dashboard. Right-to-left languages like Arabic, Hebrew, and Urdu are fully supported.</p>
+                    <p class="text-gray-600">Yes, and it's built in. Not a plugin. You can publish in as many languages as your community needs from a single dashboard. Right-to-left languages like Arabic, Hebrew, and Urdu are fully supported.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Can we accept donations through VellumCMS?</h3>
@@ -83,7 +83,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Is VellumCMS GDPR-compliant?</h3>
-                    <p class="text-gray-600">Yes, GDPR compliance is designed in — not bolted on. We only collect what's necessary, store it securely, and give you full control over data export and deletion. We'll never share or sell your data or your supporters' data.</p>
+                    <p class="text-gray-600">Yes, GDPR compliance is designed in, not bolted on. We only collect what's necessary, store it securely, and give you full control over data export and deletion. We'll never share or sell your data or your supporters' data.</p>
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Who owns our content and data?</h3>
@@ -91,7 +91,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">Can we self-host VellumCMS?</h3>
-                    <p class="text-gray-600">Yes. VellumCMS runs on standard PHP and MySQL and can be deployed on your own server or a trusted provider. We also offer managed hosting for organisations who prefer it.</p>
+                    <p class="text-gray-600">Yes. VellumCMS runs on standard PHP and MySQL and can be deployed on your own server or a trusted provider. Soon, we  will also be offering managed hosting for organisations who prefer it.</p>
                 </div>
             </div>
         </div>

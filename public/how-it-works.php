@@ -41,7 +41,7 @@
                 <div class="flex-shrink-0 w-14 h-14 rounded-full bg-[#0EA5E9] text-white flex items-center justify-center text-2xl font-extrabold">2</div>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Set Up Your Site in Minutes</h3>
-                    <p class="text-gray-600">Your dashboard is ready the moment you're approved. Add your logo, pick your colour scheme, and fill in your homepage. We've built sensible defaults for charities — you're never starting from a blank canvas.</p>
+                    <p class="text-gray-600">Your dashboard is ready the moment you're approved. Add your logo, pick your colour scheme, and fill in your homepage. We've built sensible defaults for charities. You're never starting from a blank canvas.</p>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
                 <div class="flex-shrink-0 w-14 h-14 rounded-full bg-[#10B981] text-white flex items-center justify-center text-2xl font-extrabold">3</div>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Build Pages with Blocks</h3>
-                    <p class="text-gray-600">Use the drag-and-drop block editor to build every page your charity needs. Hero sections, donation forms, event listings, team directories, resource libraries — drag them in, fill them out, publish.</p>
+                    <p class="text-gray-600">Use the drag-and-drop block editor to build every page your charity needs. Hero sections, donation forms, event listings, team directories, resource libraries, drag them in, fill them out, publish.</p>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@
                 <div class="flex-shrink-0 w-14 h-14 rounded-full bg-[#DB2777] text-white flex items-center justify-center text-2xl font-extrabold">5</div>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-900 mb-2">Connect Donations & Go Live</h3>
-                    <p class="text-gray-600">Link your payment processor (Stripe, PayPal, GoCardless, or others), set up Gift Aid, and publish. Your site is live — accessible, fast, and fully yours.</p>
+                    <p class="text-gray-600">Link your payment processor (Stripe, PayPal, GoCardless, or others), set up Gift Aid, and publish. Your site is live: accessible, fast, and fully yours.</p>
                 </div>
             </div>
 
@@ -120,7 +120,7 @@
                 <span class="text-[#4361EE] mt-1">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </span>
-                <p class="text-gray-700">Multilingual publishing — unlimited languages</p>
+                <p class="text-gray-700">Multilingual publishing, unlimited languages</p>
             </div>
             <div class="flex items-start gap-4">
                 <span class="text-[#4361EE] mt-1">

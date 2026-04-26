@@ -14,7 +14,7 @@
     <div class="max-w-4xl mx-auto relative z-10">
         <p class="text-sm uppercase tracking-widest text-[#4CC9F0] mb-3 font-semibold">We're here</p>
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Let's Talk.</h1>
-        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">Whether you're a charity wanting to get started, a developer with a question, or someone who wants to collaborate — we'd love to hear from you.</p>
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">Whether you're a charity wanting to get started, a developer with a question, or someone who wants to collaborate: we'd love to hear from you.</p>
     </div>
     <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#4361EE] via-[#4895EF] to-[#4CC9F0] opacity-10 blur-3xl"></div>
 </section>
@@ -80,7 +80,7 @@
                         </div>
                         <div>
                             <p class="font-semibold text-gray-900">Bluesky</p>
-                            <a href="https://bsky.app/profile/vellumcms.xyz" target="_blank" class="text-[#4361EE] hover:underline text-sm">@vellumcms.xyz</a>
+                            <a href="https://bsky.app/profile/vellumworks.com" target="_blank" class="text-[#4361EE] hover:underline text-sm">@vellumworks</a>
                         </div>
                     </div>
                     <div class="flex gap-4 items-start">
@@ -97,7 +97,7 @@
 
             <div class="bg-[#F9FAFB] rounded-2xl p-8">
                 <h3 class="text-xl font-bold text-gray-900 mb-3">Charity Getting Started?</h3>
-                <p class="text-gray-600 text-sm mb-4">If you're a registered charity or nonprofit ready to apply, head straight to the get-started page — you don't need to contact us first.</p>
+                <p class="text-gray-600 text-sm mb-4">If you're a registered charity or nonprofit ready to apply, head straight to the get-started page, you don't need to contact us first.</p>
                 <a href="/get-started" class="inline-block bg-[#4361EE] text-white text-sm font-semibold px-5 py-2 rounded-full hover:bg-[#364FC7] transition">Apply Now</a>
             </div>
 

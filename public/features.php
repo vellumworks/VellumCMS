@@ -14,7 +14,7 @@
     <div class="max-w-4xl mx-auto relative z-10">
         <p class="text-sm uppercase tracking-widest text-[#4CC9F0] mb-3 font-semibold">Built for purpose</p>
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Everything You Need. Nothing You Don't.</h1>
-        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">VellumCMS is packed with the tools charities actually need — and stripped of everything that slows you down or costs you money.</p>
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">VellumCMS is packed with the tools charities actually need and stripped of everything that slows you down or costs you money.</p>
     </div>
     <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#4361EE] via-[#4895EF] to-[#4CC9F0] opacity-10 blur-3xl"></div>
 </section>
@@ -34,11 +34,11 @@
             </div>
             <div class="bg-[#F1F5FF] p-7 rounded-2xl">
                 <h3 class="text-xl font-bold text-[#4361EE] mb-2">Autosave & Version History</h3>
-                <p class="text-gray-700 text-sm">Every edit is saved automatically. Roll back to any previous version with a single click — no lost work, ever.</p>
+                <p class="text-gray-700 text-sm">Every edit is saved automatically. Roll back to any previous version with a single click: no lost work, ever.</p>
             </div>
             <div class="bg-[#F1F5FF] p-7 rounded-2xl">
                 <h3 class="text-xl font-bold text-[#4361EE] mb-2">Rapid-Response Campaigns</h3>
-                <p class="text-gray-700 text-sm">Launch urgent petitions, emergency appeals, and campaign landing pages in minutes — not hours.</p>
+                <p class="text-gray-700 text-sm">Launch urgent petitions, emergency appeals, and campaign landing pages in minutes, not hours.</p>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@
             </div>
             <div class="bg-white p-7 rounded-2xl shadow-sm">
                 <h3 class="text-xl font-bold text-[#10B981] mb-2">RTL & Bidirectional Support</h3>
-                <p class="text-gray-700 text-sm">Right-to-left language layouts are handled automatically — Arabic, Hebrew, Urdu, and more.</p>
+                <p class="text-gray-700 text-sm">Right-to-left language layouts are handled automatically: Arabic, Hebrew, Urdu, and more.</p>
             </div>
             <div class="bg-white p-7 rounded-2xl shadow-sm">
                 <h3 class="text-xl font-bold text-[#10B981] mb-2">One Dashboard, All Languages</h3>
@@ -129,11 +129,11 @@
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-7 rounded-2xl shadow-sm">
                 <h3 class="text-xl font-bold text-[#EA580C] mb-2">One-Time & Recurring Donations</h3>
-                <p class="text-gray-700 text-sm">Give supporters the choice of a single gift or a regular commitment — with transparent, low-friction checkout.</p>
+                <p class="text-gray-700 text-sm">Give supporters the choice of a single gift or a regular commitment, with transparent, low-friction checkout.</p>
             </div>
             <div class="bg-white p-7 rounded-2xl shadow-sm">
                 <h3 class="text-xl font-bold text-[#EA580C] mb-2">Gift Aid & Tax Receipts</h3>
-                <p class="text-gray-700 text-sm">Collect Gift Aid declarations automatically and issue tax-friendly receipts where applicable — no manual work.</p>
+                <p class="text-gray-700 text-sm">Collect Gift Aid declarations automatically and issue tax-friendly receipts where applicable, no manual work.</p>
             </div>
             <div class="bg-white p-7 rounded-2xl shadow-sm">
                 <h3 class="text-xl font-bold text-[#EA580C] mb-2">No Vendor Lock-In</h3>
@@ -162,7 +162,7 @@
             </div>
             <div class="bg-[#ECFDF5] p-7 rounded-2xl">
                 <h3 class="text-xl font-bold text-[#10B981] mb-2">Fast by Default</h3>
-                <p class="text-gray-700 text-sm">Image optimisation, lazy loading, minimal JS, and cache-first architecture — out of the box, no plugins required.</p>
+                <p class="text-gray-700 text-sm">Image optimisation, lazy loading, minimal JS, and cache-first architecture. Out of the box, no plugins required.</p>
             </div>
         </div>
     </div>
