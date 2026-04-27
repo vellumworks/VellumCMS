@@ -1,20 +1,47 @@
+<?php
+require_once '../includes/beehiiv.php';
+
+$signup_success = false;
+$signup_error   = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['agree_terms'])) {
+    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
+    if ($email) {
+        $fields = [];
+        if (!empty($_POST['org_name']))  $fields[] = ['name' => 'org_name',  'value' => htmlspecialchars($_POST['org_name'])];
+        if (!empty($_POST['org_type']))  $fields[] = ['name' => 'org_type',  'value' => htmlspecialchars($_POST['org_type'])];
+        beehiiv_subscribe($email, $fields);
+        $signup_success = true;
+    } else {
+        $signup_error = 'Please enter a valid email address.';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Get Started | VellumCMS</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <meta name="description" content="Apply for free access to VellumCMS. For registered UK charities, nonprofits, and CICs. Verified in seconds, no credit card required.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VellumCMS">
+    <meta property="og:title" content="Get Started | VellumCMS">
+    <meta property="og:description" content="Apply for free access to VellumCMS. For registered UK charities, nonprofits, and CICs. Verified in seconds, no credit card required.">
+    <meta property="og:url" content="https://vellumcms.xyz/get-started">
+    <link rel="canonical" href="https://vellumcms.xyz/get-started">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<?php include '../includes/header.php'; ?>
 <body class="bg-[#F9FAFB] text-gray-800 font-sans leading-relaxed">
+<?php include '../includes/header.php'; ?>
 
 <section class="min-h-screen flex flex-col justify-center py-20 px-6">
     <div class="max-w-md mx-auto w-full">
 
         <!-- Logo / wordmark -->
         <div class="text-center mb-8">
-            <a href="/" class="inline-block text-2xl font-extrabold text-[#0f172a]">Vellum<span class="text-[#4361EE]">CMS</span></a>
+            <a href="/" class="inline-block text-2xl font-extrabold text-[#0f172a]">Vellum<em><span class="text-[#4361EE]">CMS</span></em></a>
             <p class="text-gray-500 text-sm mt-2">Free, ethical website tools for charities and nonprofits.</p>
         </div>
 
@@ -41,10 +68,22 @@
 
             <!-- Sign Up Form -->
             <div id="panel-signup" class="p-8">
+                <?php if ($signup_success): ?>
+                <div class="text-center py-4">
+                    <div class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#ECFDF5] mb-5">
+                        <svg class="h-7 w-7 text-[#10B981]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <h2 class="text-xl font-extrabold text-gray-900 mb-2">You're on the list.</h2>
+                    <p class="text-sm text-gray-500">We'll be in touch as soon as early access opens. Keep an eye on your inbox.</p>
+                </div>
+                <?php else: ?>
+                <?php if ($signup_error): ?>
+                <p class="text-sm text-red-500 mb-4"><?= htmlspecialchars($signup_error) ?></p>
+                <?php endif; ?>
                 <h1 class="text-2xl font-extrabold text-gray-900 mb-1">Apply for Free Access</h1>
                 <p class="text-sm text-gray-500 mb-6">For registered charities, nonprofits, and CICs. Verified in seconds.</p>
 
-                <form action="#" method="POST" class="space-y-4">
+                <form action="/get-started" method="POST" class="space-y-4">
 
                     <div class="grid grid-cols-2 gap-4">
                         <div>
@@ -120,6 +159,7 @@
                     <p class="text-xs text-gray-400 text-center">No credit card. No contracts. Verified within 24 hours.</p>
 
                 </form>
+                <?php endif; ?>
             </div>
 
             <!-- Log In Form -->
@@ -205,7 +245,6 @@
     }
 </script>
 
+<?php include '../includes/footer.php'; ?>
 </body>
 </html>
-
-<?php include '../includes/footer.php'; ?>

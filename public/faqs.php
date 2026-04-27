@@ -146,9 +146,17 @@
         ]
     }
     </script>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <meta name="description" content="Answers to common questions about VellumCMS — who it's for, how it's free, hosting options, data ownership, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VellumCMS">
+    <meta property="og:title" content="FAQs | VellumCMS">
+    <meta property="og:description" content="Answers to common questions about VellumCMS — who it's for, how it's free, hosting options, data ownership, and more.">
+    <meta property="og:url" content="https://vellumcms.xyz/faqs">
+    <link rel="canonical" href="https://vellumcms.xyz/faqs">
 </head>
-<?php include '../includes/header.php'; ?>
 <body class="bg-[#fefefe] text-gray-800 font-sans leading-relaxed">
+<?php include '../includes/header.php'; ?>
 
 <!-- Hero -->
 <section class="bg-[#0f172a] text-white py-20 px-6 text-center relative overflow-hidden">
@@ -336,7 +344,6 @@
     </div>
 </section>
 
+<?php include '../includes/footer.php'; ?>
 </body>
 </html>
-
-<?php include '../includes/footer.php'; ?>

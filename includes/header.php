@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="/assets/styles.css">
-</head>
 <header class="main-header">
     <div class="container">
         <!-- Logo -->
@@ -15,6 +12,7 @@
                 <li><a href="/how-it-works">How It Works</a></li>
                 <li><a href="https://medium.com/vellumworks" target="_blank">Resources</a></li>
                 <li><a href="/no-costs">No costs</a></li>
+                <li><a href="/roadmap">Roadmap</a></li>
             </ul>
         </nav>
 

@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Privacy Policy | VellumCMS</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <meta name="description" content="VellumCMS Privacy Policy — how we handle your data, what we collect, and your rights under UK GDPR.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VellumCMS">
+    <meta property="og:title" content="Privacy Policy | VellumCMS">
+    <meta property="og:description" content="VellumCMS Privacy Policy — how we handle your data, what we collect, and your rights under UK GDPR.">
+    <meta property="og:url" content="https://vellumcms.xyz/legal/privacy-policy">
+    <link rel="canonical" href="https://vellumcms.xyz/legal/privacy-policy">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<?php include '../../includes/header.php'; ?>
 <body class="bg-[#fefefe] text-gray-800 font-sans leading-relaxed">
+<?php include '../../includes/header.php'; ?>
 
 <!-- Hero -->
 <section class="bg-[#0f172a] text-white py-16 px-6 text-center">
@@ -91,7 +99,6 @@
     </div>
 </section>
 
+<?php include '../../includes/footer.php'; ?>
 </body>
 </html>
-
-<?php include '../../includes/footer.php'; ?>

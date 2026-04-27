@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>How It Works | VellumCMS</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <meta name="description" content="See how VellumCMS works — from sign-up and charity verification to publishing your first page. Simple steps built for your team.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VellumCMS">
+    <meta property="og:title" content="How It Works | VellumCMS">
+    <meta property="og:description" content="See how VellumCMS works — from sign-up and charity verification to publishing your first page. Simple steps built for your team.">
+    <meta property="og:url" content="https://vellumcms.xyz/how-it-works">
+    <link rel="canonical" href="https://vellumcms.xyz/how-it-works">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<?php include '../includes/header.php'; ?>
 <body class="bg-[#fefefe] text-gray-800 font-sans leading-relaxed">
+<?php include '../includes/header.php'; ?>
 
 <!-- Hero -->
 <section class="bg-[#0f172a] text-white py-20 px-6 text-center relative overflow-hidden">
@@ -165,7 +173,6 @@
     </div>
 </section>
 
+<?php include '../includes/footer.php'; ?>
 </body>
 </html>
-
-<?php include '../includes/footer.php'; ?>
