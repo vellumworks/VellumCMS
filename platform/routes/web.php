@@ -5,6 +5,10 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\InvitationController;
+use App\Http\Controllers\Settings\OrgSettingsController;
+use App\Http\Controllers\Settings\ProfileController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
 // --- Guest routes ---
@@ -34,10 +38,28 @@ Route::middleware('auth')->group(function () {
     // Pending verification holding page (no org-verified check)
     Route::get('/pending', [DashboardController::class, 'pending'])->name('pending');
 
-    // Main dashboard — requires verified organisation
+    // Main dashboard + all protected pages — requires verified organisation
     Route::middleware('org.verified')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+        // Settings
+        Route::get('/settings/organisation',    [OrgSettingsController::class, 'show'])->name('settings.organisation');
+        Route::patch('/settings/organisation',  [OrgSettingsController::class, 'update'])->name('settings.organisation.update');
+
+        Route::get('/settings/profile',         [ProfileController::class, 'show'])->name('settings.profile');
+        Route::patch('/settings/profile',       [ProfileController::class, 'update'])->name('settings.profile.update');
+        Route::patch('/settings/password',      [ProfileController::class, 'updatePassword'])->name('settings.password');
+
+        // Team
+        Route::get('/team',                     [TeamController::class, 'index'])->name('team.index');
+        Route::post('/team/invite',             [TeamController::class, 'invite'])->name('team.invite');
+        Route::patch('/team/{user}/role',       [TeamController::class, 'updateRole'])->name('team.role');
+        Route::delete('/team/{user}',           [TeamController::class, 'remove'])->name('team.remove');
     });
 });
+
+// Invitation (public — no auth needed)
+Route::get('/invitation/{token}',  [InvitationController::class, 'show'])->name('invitation.show');
+Route::post('/invitation/{token}', [InvitationController::class, 'accept'])->name('invitation.accept');
 
 Route::get('/', fn () => redirect()->route('login'));
