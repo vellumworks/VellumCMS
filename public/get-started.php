@@ -1,22 +1,3 @@
-<?php
-require_once '../includes/beehiiv.php';
-
-$signup_success = false;
-$signup_error   = '';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['agree_terms'])) {
-    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
-    if ($email) {
-        $fields = [];
-        if (!empty($_POST['org_name']))  $fields[] = ['name' => 'org_name',  'value' => htmlspecialchars($_POST['org_name'])];
-        if (!empty($_POST['org_type']))  $fields[] = ['name' => 'org_type',  'value' => htmlspecialchars($_POST['org_type'])];
-        beehiiv_subscribe($email, $fields);
-        $signup_success = true;
-    } else {
-        $signup_error = 'Please enter a valid email address.';
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,22 +49,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['agre
 
             <!-- Sign Up Form -->
             <div id="panel-signup" class="p-8">
-                <?php if ($signup_success): ?>
-                <div class="text-center py-4">
-                    <div class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#ECFDF5] mb-5">
-                        <svg class="h-7 w-7 text-[#10B981]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                    </div>
-                    <h2 class="text-xl font-extrabold text-gray-900 mb-2">You're on the list.</h2>
-                    <p class="text-sm text-gray-500">We'll be in touch as soon as early access opens. Keep an eye on your inbox.</p>
-                </div>
-                <?php else: ?>
-                <?php if ($signup_error): ?>
-                <p class="text-sm text-red-500 mb-4"><?= htmlspecialchars($signup_error) ?></p>
-                <?php endif; ?>
                 <h1 class="text-2xl font-extrabold text-gray-900 mb-1">Apply for Free Access</h1>
                 <p class="text-sm text-gray-500 mb-6">For registered charities, nonprofits, and CICs. Verified in seconds.</p>
 
-                <form action="/get-started" method="POST" class="space-y-4">
+                <form action="#" method="POST" class="space-y-4">
 
                     <div class="grid grid-cols-2 gap-4">
                         <div>
@@ -159,7 +128,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'], $_POST['agre
                     <p class="text-xs text-gray-400 text-center">No credit card. No contracts. Verified within 24 hours.</p>
 
                 </form>
-                <?php endif; ?>
             </div>
 
             <!-- Log In Form -->

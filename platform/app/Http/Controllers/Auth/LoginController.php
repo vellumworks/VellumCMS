@@ -7,15 +7,9 @@ use App\Models\AuditLog;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\View\View;
 
 class LoginController extends Controller
 {
-    public function show(): View
-    {
-        return view('auth.login');
-    }
-
     public function store(Request $request): RedirectResponse
     {
         $credentials = $request->validate([

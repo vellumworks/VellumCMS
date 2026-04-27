@@ -12,16 +12,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Illuminate\View\View;
 
 class RegisterController extends Controller
 {
     public function __construct(private CharityCommissionService $charityCommission) {}
-
-    public function show(): View
-    {
-        return view('auth.register');
-    }
 
     public function store(Request $request): RedirectResponse
     {

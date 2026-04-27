@@ -1,7 +1,4 @@
-/vendor
-/tests
-/database
-/database
-/config
-/app
-/bootstrap
+.env
+.DS_Store
+.idea/
+Thumbs.db

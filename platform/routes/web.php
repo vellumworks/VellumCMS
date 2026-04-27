@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 
 // --- Guest routes ---
 Route::middleware('guest')->group(function () {
-    Route::get('/register',            [RegisterController::class,      'show'])->name('register');
-    Route::post('/register',           [RegisterController::class,      'store']);
+    // Combined get-started page (register + login tabs)
+    Route::get('/get-started', fn () => view('auth.get-started'))->name('get-started');
+    Route::get('/register',    fn () => redirect()->route('get-started'))->name('register');
+    Route::post('/register',   [RegisterController::class, 'store']);
 
-    Route::get('/login',               [LoginController::class,         'show'])->name('login');
-    Route::post('/login',              [LoginController::class,         'store']);
+    Route::get('/login',       fn () => redirect()->to('/get-started?tab=login'))->name('login');
+    Route::post('/login',      [LoginController::class, 'store']);
 
     Route::get('/forgot-password',     [PasswordResetController::class, 'requestForm'])->name('password.request');
     Route::post('/forgot-password',    [PasswordResetController::class, 'sendLink'])->name('password.email');
@@ -62,4 +64,4 @@ Route::middleware('auth')->group(function () {
 Route::get('/invitation/{token}',  [InvitationController::class, 'show'])->name('invitation.show');
 Route::post('/invitation/{token}', [InvitationController::class, 'accept'])->name('invitation.accept');
 
-Route::get('/', fn () => redirect()->route('login'));
+Route::get('/', fn () => redirect()->route('get-started'));

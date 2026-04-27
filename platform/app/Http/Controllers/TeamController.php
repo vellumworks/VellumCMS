@@ -24,6 +24,8 @@ class TeamController extends Controller
 
     public function invite(Request $request): RedirectResponse
     {
+        abort_unless(auth()->user()->isAdmin(), 403);
+
         $org = auth()->user()->organisation;
 
         $request->validate([
