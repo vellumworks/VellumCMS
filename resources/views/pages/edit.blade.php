@@ -1,15 +1,19 @@
 @extends('layouts.dashboard')
 @section('title', $page->title)
 
-@section('head')
-<link rel="stylesheet" href="https://unpkg.com/trix@2.1.1/dist/trix.css">
-<script src="https://unpkg.com/trix@2.1.1/dist/trix.umd.min.js"></script>
+@push('head')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/trix@1.3.1/dist/trix.css">
+<script src="https://cdn.jsdelivr.net/npm/trix@1.3.1/dist/trix.js"></script>
 <style>
-    trix-editor { min-height: 320px; font-size: 0.9rem; border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 1rem; outline: none; }
-    trix-editor:focus { border-color: #4361EE; box-shadow: 0 0 0 2px rgba(67,97,238,0.15); }
-    trix-toolbar .trix-button-group { border: 1px solid #e5e7eb; border-radius: 0.5rem; }
+    trix-editor { min-height: 320px; font-size: 0.9rem; border: 1px solid #e5e7eb !important; border-radius: 0.75rem; padding: 1rem !important; outline: none; cursor: text; }
+    trix-editor:focus { border-color: #4361EE !important; box-shadow: 0 0 0 2px rgba(67,97,238,0.15); }
+    trix-toolbar .trix-button-group { border: 1px solid #e5e7eb !important; border-radius: 0.5rem; }
+    trix-toolbar button { all: revert; cursor: pointer; padding: 0 0.5rem; font-size: 0.75rem; }
+    trix-toolbar button.trix-active { background: #e5e7eb; }
+    trix-toolbar { background: #f9fafb; border-bottom: 1px solid #e5e7eb; border-radius: 0.75rem 0.75rem 0 0; padding: 0.5rem; }
+    trix-editor .attachment__caption { display: none; }
 </style>
-@endsection
+@endpush
 
 @section('page-header')
 <div class="flex items-center justify-between">

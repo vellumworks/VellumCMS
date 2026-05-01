@@ -6,6 +6,9 @@ use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DonationController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\InvitationController;
@@ -79,6 +82,11 @@ Route::middleware('auth')->group(function () {
         Route::patch('/pages/{page}/publish',   [PageController::class, 'publish'])->name('pages.publish');
         Route::patch('/pages/{page}/unpublish', [PageController::class, 'unpublish'])->name('pages.unpublish');
         Route::delete('/pages/{page}',          [PageController::class, 'destroy'])->name('pages.destroy');
+
+        // Donations, Events, Forms (stubs — ready to build out)
+        Route::get('/donations',                [DonationController::class, 'index'])->name('donations.index');
+        Route::get('/events',                   [EventController::class, 'index'])->name('events.index');
+        Route::get('/forms',                    [FormController::class, 'index'])->name('forms.index');
     });
 });
 

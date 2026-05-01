@@ -92,27 +92,31 @@ function closeMediaPicker() {
 }
 
 function insertMedia(url, altText, mimeType) {
-    const editor = document.querySelector('trix-editor').editor;
+    const trixEl = document.querySelector('trix-editor');
+    if (!trixEl) return;
+
+    trixEl.focus();
 
     if (mimeType.startsWith('image/')) {
-        // Insert as Trix image attachment
         const attachment = new Trix.Attachment({
             url:         url,
             contentType: mimeType,
-            filename:    altText,
+            filename:    altText || url.split('/').pop(),
+            width:       800,
         });
-        editor.insertAttachment(attachment);
+        trixEl.editor.insertAttachment(attachment);
     } else {
-        // Insert non-images as a hyperlink
-        editor.activateAttribute('href', url);
-        editor.insertString(altText);
-        editor.deactivateAttribute('href');
+        // Non-images: insert as a labelled link
+        const position = trixEl.editor.getPosition();
+        trixEl.editor.setSelectedRange([position, position]);
+        trixEl.editor.activateAttribute('href', url);
+        trixEl.editor.insertString(altText || url.split('/').pop());
+        trixEl.editor.deactivateAttribute('href');
     }
 
     closeMediaPicker();
 }
 
-// Close on Escape
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeMediaPicker();
 });

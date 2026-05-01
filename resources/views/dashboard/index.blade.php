@@ -36,22 +36,52 @@
     @endif
 </div>
 
-{{-- Coming soon modules --}}
-<h2 class="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">Coming soon</h2>
+{{-- Modules grid --}}
+<h2 class="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">Your tools</h2>
 <div class="grid md:grid-cols-3 gap-4">
-    @foreach ([
-        ['Pages',     'Build and manage your site pages.',        '#4361EE', 'bg-[#F1F5FF]'],
-        ['Media',     'Upload images, documents, and files.',     '#10B981', 'bg-[#ECFDF5]'],
-        ['Donations', 'Set up donation pages and track gifts.',   '#EA580C', 'bg-[#FFF7ED]'],
-        ['Analytics', 'Privacy-first insights on your visitors.','#DB2777', 'bg-[#FDF2F8]'],
-        ['Events',    'Manage events and RSVPs.',                 '#7C3AED', 'bg-[#EDE9FE]'],
-        ['Forms',     'Volunteer intake and contact forms.',      '#F59E0B', 'bg-[#FFFBEB]'],
-    ] as [$label, $desc, $colour, $bg])
-    <div class="{{ $bg }} rounded-2xl p-6 opacity-50 select-none">
-        <p class="font-bold text-sm mb-1" style="color:{{ $colour }}">{{ $label }}</p>
-        <p class="text-xs text-gray-600">{{ $desc }}</p>
+
+    {{-- Pages — live --}}
+    <a href="{{ route('pages.index') }}" class="bg-[#F1F5FF] rounded-2xl p-6 hover:shadow-md hover:scale-[1.01] transition-all block">
+        <p class="font-bold text-sm mb-1 text-[#4361EE]">Pages</p>
+        <p class="text-xs text-gray-600">Build and manage your site pages.</p>
+        <p class="text-xs text-[#4361EE] mt-3 font-semibold">{{ $org->pages()->count() }} {{ Str::plural('page', $org->pages()->count()) }} →</p>
+    </a>
+
+    {{-- Media — live --}}
+    <a href="{{ route('media.index') }}" class="bg-[#ECFDF5] rounded-2xl p-6 hover:shadow-md hover:scale-[1.01] transition-all block">
+        <p class="font-bold text-sm mb-1 text-[#10B981]">Media</p>
+        <p class="text-xs text-gray-600">Upload images, documents, and files.</p>
+        <p class="text-xs text-[#10B981] mt-3 font-semibold">{{ $org->media()->count() }} {{ Str::plural('file', $org->media()->count()) }} →</p>
+    </a>
+
+    {{-- Donations — stub --}}
+    <a href="{{ route('donations.index') }}" class="bg-[#FFF7ED] rounded-2xl p-6 hover:shadow-md hover:scale-[1.01] transition-all block">
+        <p class="font-bold text-sm mb-1 text-[#EA580C]">Donations</p>
+        <p class="text-xs text-gray-600">Set up donation pages and track gifts.</p>
+        <p class="text-xs text-[#EA580C] mt-3 font-semibold">Set up →</p>
+    </a>
+
+    {{-- Analytics — coming soon --}}
+    <div class="bg-[#FDF2F8] rounded-2xl p-6 opacity-50 select-none">
+        <p class="font-bold text-sm mb-1 text-[#DB2777]">Analytics</p>
+        <p class="text-xs text-gray-600">Privacy-first insights on your visitors.</p>
+        <p class="text-xs text-gray-400 mt-3">Coming soon</p>
     </div>
-    @endforeach
+
+    {{-- Events — stub --}}
+    <a href="{{ route('events.index') }}" class="bg-[#EDE9FE] rounded-2xl p-6 hover:shadow-md hover:scale-[1.01] transition-all block">
+        <p class="font-bold text-sm mb-1 text-[#7C3AED]">Events</p>
+        <p class="text-xs text-gray-600">Manage events and RSVPs.</p>
+        <p class="text-xs text-[#7C3AED] mt-3 font-semibold">Manage →</p>
+    </a>
+
+    {{-- Forms — stub --}}
+    <a href="{{ route('forms.index') }}" class="bg-[#FFFBEB] rounded-2xl p-6 hover:shadow-md hover:scale-[1.01] transition-all block">
+        <p class="font-bold text-sm mb-1 text-[#F59E0B]">Forms</p>
+        <p class="text-xs text-gray-600">Volunteer intake and contact forms.</p>
+        <p class="text-xs text-[#F59E0B] mt-3 font-semibold">Manage →</p>
+    </a>
+
 </div>
 
 @endsection
