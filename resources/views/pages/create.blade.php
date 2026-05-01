@@ -62,6 +62,7 @@
     {{-- Content --}}
     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
         <label class="block text-xs font-semibold text-gray-700 mb-3">Content</label>
+        @include('pages.partials.media-picker')
         <input id="content-input" type="hidden" name="content" value="{{ old('content') }}">
         <trix-editor input="content-input"></trix-editor>
     </div>

@@ -24,7 +24,8 @@ class PageController extends Controller
 
     public function create(): View
     {
-        return view('pages.create');
+        $media = auth()->user()->organisation->media()->latest()->get();
+        return view('pages.create', compact('media'));
     }
 
     public function store(Request $request): RedirectResponse
@@ -67,7 +68,8 @@ class PageController extends Controller
     public function edit(Page $page): View
     {
         $this->authorise($page);
-        return view('pages.edit', compact('page'));
+        $media = auth()->user()->organisation->media()->latest()->get();
+        return view('pages.edit', compact('page', 'media'));
     }
 
     public function preview(Page $page): View

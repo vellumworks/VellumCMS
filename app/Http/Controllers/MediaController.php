@@ -73,6 +73,20 @@ class MediaController extends Controller
         return back()->with('status', '"' . $file->getClientOriginalName() . '" uploaded.');
     }
 
+    public function update(Request $request, Media $media): RedirectResponse
+    {
+        abort_if($media->organisation_id !== auth()->user()->organisation_id, 403);
+
+        $request->validate([
+            'name'     => ['nullable', 'string', 'max:255'],
+            'alt_text' => ['nullable', 'string', 'max:500'],
+        ]);
+
+        $media->update($request->only('name', 'alt_text'));
+
+        return back()->with('status', 'File details updated.');
+    }
+
     public function destroy(Media $media): RedirectResponse
     {
         abort_if($media->organisation_id !== auth()->user()->organisation_id, 403);

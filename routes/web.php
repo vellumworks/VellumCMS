@@ -66,6 +66,7 @@ Route::middleware('auth')->group(function () {
         // Media
         Route::get('/media',                    [MediaController::class, 'index'])->name('media.index');
         Route::post('/media',                   [MediaController::class, 'store'])->name('media.store');
+        Route::patch('/media/{media}',          [MediaController::class, 'update'])->name('media.update');
         Route::delete('/media/{media}',         [MediaController::class, 'destroy'])->name('media.destroy');
 
         // Pages

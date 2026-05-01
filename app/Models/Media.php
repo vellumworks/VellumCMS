@@ -15,6 +15,8 @@ class Media extends Model
         'uploaded_by',
         'filename',
         'original_name',
+        'name',
+        'alt_text',
         'mime_type',
         'size',
         'path',
