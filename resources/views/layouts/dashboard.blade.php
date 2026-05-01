@@ -71,6 +71,19 @@
                 </x-slot>
                 Profile
             </x-nav-link>
+
+            @php $adminEmails = array_map('trim', explode(',', env('ADMIN_EMAILS', ''))); @endphp
+            @if (in_array(auth()->user()->email, $adminEmails))
+            <div class="pt-4 pb-2">
+                <p class="text-xs font-semibold text-gray-600 uppercase tracking-widest px-3">Platform</p>
+            </div>
+            <x-nav-link href="{{ route('admin.index') }}" :active="request()->routeIs('admin.*')">
+                <x-slot name="icon">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </x-slot>
+                Admin
+            </x-nav-link>
+            @endif
         </nav>
 
         {{-- Logout --}}

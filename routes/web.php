@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InvitationController;
 use App\Http\Controllers\PublicController;
@@ -59,6 +60,15 @@ Route::middleware('auth')->group(function () {
         Route::patch('/team/{user}/role',       [TeamController::class, 'updateRole'])->name('team.role');
         Route::delete('/team/{user}',           [TeamController::class, 'remove'])->name('team.remove');
     });
+});
+
+// --- Platform admin ---
+Route::middleware(['auth', 'platform.admin'])->prefix('admin')->name('admin.')->group(function () {
+    Route::get('/',                           [AdminController::class, 'index'])->name('index');
+    Route::patch('/{org}/approve',            [AdminController::class, 'approve'])->name('approve');
+    Route::patch('/{org}/reject',             [AdminController::class, 'reject'])->name('reject');
+    Route::patch('/{org}/suspend',            [AdminController::class, 'suspend'])->name('suspend');
+    Route::patch('/{org}/reinstate',          [AdminController::class, 'reinstate'])->name('reinstate');
 });
 
 // Invitation (public — no auth needed)

@@ -12,7 +12,8 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->alias([
-            'org.verified' => \App\Http\Middleware\EnsureOrganisationVerified::class,
+            'org.verified'   => \App\Http\Middleware\EnsureOrganisationVerified::class,
+            'platform.admin' => \App\Http\Middleware\PlatformAdmin::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

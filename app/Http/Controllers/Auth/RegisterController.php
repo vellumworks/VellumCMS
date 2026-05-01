@@ -69,7 +69,15 @@ class RegisterController extends Controller
         });
 
         Auth::login($user);
-        $user->sendEmailVerificationNotification();
+
+        try {
+            $user->sendEmailVerificationNotification();
+        } catch (\Exception $e) {
+            \Illuminate\Support\Facades\Log::warning('Verification email failed', [
+                'user'  => $user->id,
+                'error' => $e->getMessage(),
+            ]);
+        }
 
         if ($status === 'verified') {
             return redirect()->route('dashboard')
