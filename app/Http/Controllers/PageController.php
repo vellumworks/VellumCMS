@@ -70,6 +70,12 @@ class PageController extends Controller
         return view('pages.edit', compact('page'));
     }
 
+    public function preview(Page $page): View
+    {
+        $this->authorise($page);
+        return view('pages.preview', compact('page'));
+    }
+
     public function update(Request $request, Page $page): RedirectResponse
     {
         $this->authorise($page);
@@ -114,7 +120,7 @@ class PageController extends Controller
 
         AuditLog::record('page.published', $page->organisation_id, auth()->id(), ['page' => $page->title]);
 
-        return back()->with('status', '&ldquo;' . $page->title . '&rdquo; published.');
+        return back()->with('status', '"' . $page->title . '" published.');
     }
 
     public function unpublish(Page $page): RedirectResponse
@@ -126,7 +132,7 @@ class PageController extends Controller
 
         AuditLog::record('page.unpublished', $page->organisation_id, auth()->id(), ['page' => $page->title]);
 
-        return back()->with('status', '&ldquo;' . $page->title . '&rdquo; moved back to draft.');
+        return back()->with('status', '"' . $page->title . '" moved back to draft.');
     }
 
     public function destroy(Page $page): RedirectResponse
@@ -140,7 +146,7 @@ class PageController extends Controller
         AuditLog::record('page.deleted', $page->organisation_id, auth()->id(), ['page' => $title]);
 
         return redirect()->route('pages.index')
-            ->with('status', '&ldquo;' . $title . '&rdquo; deleted.');
+            ->with('status', '"' . $title . '" deleted.');
     }
 
     private function authorise(Page $page): void

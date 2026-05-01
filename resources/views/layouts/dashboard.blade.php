@@ -34,12 +34,11 @@
                 Pages
             </x-nav-link>
 
-            <x-nav-link href="#" :active="false" disabled>
+            <x-nav-link href="{{ route('media.index') }}" :active="request()->routeIs('media.*')">
                 <x-slot name="icon">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path stroke-linecap="round" d="M3 9h18M9 21V9"/></svg>
                 </x-slot>
                 Media
-                <span class="ml-auto text-[10px] text-gray-600 bg-white/10 px-1.5 py-0.5 rounded">Soon</span>
             </x-nav-link>
 
             <div class="pt-4 pb-2">

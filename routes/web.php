@@ -6,11 +6,13 @@ use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\InvitationController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\Settings\OrgSettingsController;
 use App\Http\Controllers\Settings\ProfileController;
+use App\Http\Controllers\SiteController;
 use App\Http\Controllers\TeamController;
 use Illuminate\Support\Facades\Route;
 
@@ -61,11 +63,17 @@ Route::middleware('auth')->group(function () {
         Route::patch('/team/{user}/role',       [TeamController::class, 'updateRole'])->name('team.role');
         Route::delete('/team/{user}',           [TeamController::class, 'remove'])->name('team.remove');
 
+        // Media
+        Route::get('/media',                    [MediaController::class, 'index'])->name('media.index');
+        Route::post('/media',                   [MediaController::class, 'store'])->name('media.store');
+        Route::delete('/media/{media}',         [MediaController::class, 'destroy'])->name('media.destroy');
+
         // Pages
         Route::get('/pages',                    [PageController::class, 'index'])->name('pages.index');
         Route::get('/pages/create',             [PageController::class, 'create'])->name('pages.create');
         Route::post('/pages',                   [PageController::class, 'store'])->name('pages.store');
         Route::get('/pages/{page}/edit',        [PageController::class, 'edit'])->name('pages.edit');
+        Route::get('/pages/{page}/preview',     [PageController::class, 'preview'])->name('pages.preview');
         Route::put('/pages/{page}',             [PageController::class, 'update'])->name('pages.update');
         Route::patch('/pages/{page}/publish',   [PageController::class, 'publish'])->name('pages.publish');
         Route::patch('/pages/{page}/unpublish', [PageController::class, 'unpublish'])->name('pages.unpublish');
@@ -81,6 +89,10 @@ Route::middleware(['auth', 'platform.admin'])->prefix('admin')->name('admin.')->
     Route::patch('/{org}/suspend',            [AdminController::class, 'suspend'])->name('suspend');
     Route::patch('/{org}/reinstate',          [AdminController::class, 'reinstate'])->name('reinstate');
 });
+
+// --- Charity public site (test server path-based access) ---
+Route::get('/sites/{orgSlug}',             [SiteController::class, 'home'])->name('site.home');
+Route::get('/sites/{orgSlug}/{pageSlug}',  [SiteController::class, 'page'])->name('site.page');
 
 // Invitation (public — no auth needed)
 Route::get('/invitation/{token}',  [InvitationController::class, 'show'])->name('invitation.show');

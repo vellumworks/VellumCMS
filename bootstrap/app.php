@@ -15,6 +15,8 @@ return Application::configure(basePath: dirname(__DIR__))
             'org.verified'   => \App\Http\Middleware\EnsureOrganisationVerified::class,
             'platform.admin' => \App\Http\Middleware\PlatformAdmin::class,
         ]);
+
+        $middleware->prependToGroup('web', \App\Http\Middleware\DetectCharitySite::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
