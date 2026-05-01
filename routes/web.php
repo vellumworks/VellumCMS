@@ -5,10 +5,12 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SectionController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DonationController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\PublicEventController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\InvitationController;
@@ -83,10 +85,30 @@ Route::middleware('auth')->group(function () {
         Route::patch('/pages/{page}/unpublish', [PageController::class, 'unpublish'])->name('pages.unpublish');
         Route::delete('/pages/{page}',          [PageController::class, 'destroy'])->name('pages.destroy');
 
-        // Donations, Events, Forms (stubs — ready to build out)
-        Route::get('/donations',                [DonationController::class, 'index'])->name('donations.index');
-        Route::get('/events',                   [EventController::class, 'index'])->name('events.index');
-        Route::get('/forms',                    [FormController::class, 'index'])->name('forms.index');
+        // Sections (AJAX)
+        Route::post('/pages/{page}/sections',            [SectionController::class, 'store'])->name('sections.store');
+        Route::patch('/sections/{section}',              [SectionController::class, 'update'])->name('sections.update');
+        Route::delete('/sections/{section}',             [SectionController::class, 'destroy'])->name('sections.destroy');
+        Route::post('/pages/{page}/sections/reorder',    [SectionController::class, 'reorder'])->name('sections.reorder');
+
+        // Donations
+        Route::get('/donations', [DonationController::class, 'index'])->name('donations.index');
+
+        // Forms
+        Route::get('/forms', [FormController::class, 'index'])->name('forms.index');
+
+        // Events
+        Route::get('/events',                                        [EventController::class, 'index'])->name('events.index');
+        Route::get('/events/create',                                 [EventController::class, 'create'])->name('events.create');
+        Route::post('/events',                                       [EventController::class, 'store'])->name('events.store');
+        Route::get('/events/{event}/edit',                           [EventController::class, 'edit'])->name('events.edit');
+        Route::put('/events/{event}',                                [EventController::class, 'update'])->name('events.update');
+        Route::patch('/events/{event}/publish',                      [EventController::class, 'publish'])->name('events.publish');
+        Route::patch('/events/{event}/unpublish',                    [EventController::class, 'unpublish'])->name('events.unpublish');
+        Route::delete('/events/{event}',                             [EventController::class, 'destroy'])->name('events.destroy');
+        Route::get('/events/{event}/registrations',                  [EventController::class, 'registrations'])->name('events.registrations');
+        Route::patch('/events/{event}/registrations/{registration}', [EventController::class, 'updateRegistration'])->name('events.registrations.update');
+        Route::get('/events/{event}/registrations/export',           [EventController::class, 'exportRegistrations'])->name('events.registrations.export');
     });
 });
 
@@ -100,8 +122,10 @@ Route::middleware(['auth', 'platform.admin'])->prefix('admin')->name('admin.')->
 });
 
 // --- Charity public site (test server path-based access) ---
-Route::get('/sites/{orgSlug}',             [SiteController::class, 'home'])->name('site.home');
-Route::get('/sites/{orgSlug}/{pageSlug}',  [SiteController::class, 'page'])->name('site.page');
+Route::get('/sites/{orgSlug}',                              [SiteController::class, 'home'])->name('site.home');
+Route::get('/sites/{orgSlug}/events/{eventSlug}',           [PublicEventController::class, 'show'])->name('site.event');
+Route::post('/sites/{orgSlug}/events/{eventSlug}/register', [PublicEventController::class, 'register'])->name('site.event.register');
+Route::get('/sites/{orgSlug}/{pageSlug}',                   [SiteController::class, 'page'])->name('site.page');
 
 // Invitation (public — no auth needed)
 Route::get('/invitation/{token}',  [InvitationController::class, 'show'])->name('invitation.show');

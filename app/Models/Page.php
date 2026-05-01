@@ -30,6 +30,11 @@ class Page extends Model
         return $this->belongsTo(Organisation::class);
     }
 
+    public function sections(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Section::class)->orderBy('sort_order');
+    }
+
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class, 'created_by');

@@ -55,22 +55,26 @@
         </div>
     </div>
 
-    {{-- Page content --}}
-    <main class="max-w-3xl mx-auto px-6 py-16">
+    @php $sections = $page->sections; @endphp
 
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-10 leading-tight">
-            {{ $page->title }}
-        </h1>
-
-        @if ($page->content)
-            <div class="page-content text-gray-700 leading-relaxed">
-                {!! $page->content !!}
-            </div>
-        @else
-            <p class="text-gray-400 italic">No content yet. Go back to the editor and add some.</p>
-        @endif
-
-    </main>
+    @if ($sections->isNotEmpty())
+        @foreach ($sections as $section)
+            @php $s = $section->content; @endphp
+            @php $org = $page->organisation; @endphp
+            @includeIf('site.sections.' . $section->type, ['s' => $s])
+        @endforeach
+    @else
+        <main class="max-w-3xl mx-auto px-6 py-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-10 leading-tight">
+                {{ $page->title }}
+            </h1>
+            @if ($page->content)
+                <div class="page-content text-gray-700 leading-relaxed">{!! $page->content !!}</div>
+            @else
+                <p class="text-gray-400 italic">No sections yet. Go back to the editor and add some.</p>
+            @endif
+        </main>
+    @endif
 
 </body>
 </html>

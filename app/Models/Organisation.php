@@ -36,6 +36,16 @@ class Organisation extends Model
         return $this->hasMany(Media::class);
     }
 
+    public function events(): HasMany
+    {
+        return $this->hasMany(Event::class);
+    }
+
+    public function forms(): HasMany
+    {
+        return $this->hasMany(Form::class);
+    }
+
     public function auditLog(): HasMany
     {
         return $this->hasMany(AuditLog::class);
