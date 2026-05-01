@@ -27,12 +27,11 @@
                 <p class="text-xs font-semibold text-gray-600 uppercase tracking-widest px-3">Content</p>
             </div>
 
-            <x-nav-link href="#" :active="false" disabled>
+            <x-nav-link href="{{ route('pages.index') }}" :active="request()->routeIs('pages.*')">
                 <x-slot name="icon">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6M5 8h14M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg>
                 </x-slot>
                 Pages
-                <span class="ml-auto text-[10px] text-gray-600 bg-white/10 px-1.5 py-0.5 rounded">Soon</span>
             </x-nav-link>
 
             <x-nav-link href="#" :active="false" disabled>

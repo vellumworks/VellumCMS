@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\InvitationController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\Settings\OrgSettingsController;
@@ -59,6 +60,16 @@ Route::middleware('auth')->group(function () {
         Route::post('/team/invite',             [TeamController::class, 'invite'])->name('team.invite');
         Route::patch('/team/{user}/role',       [TeamController::class, 'updateRole'])->name('team.role');
         Route::delete('/team/{user}',           [TeamController::class, 'remove'])->name('team.remove');
+
+        // Pages
+        Route::get('/pages',                    [PageController::class, 'index'])->name('pages.index');
+        Route::get('/pages/create',             [PageController::class, 'create'])->name('pages.create');
+        Route::post('/pages',                   [PageController::class, 'store'])->name('pages.store');
+        Route::get('/pages/{page}/edit',        [PageController::class, 'edit'])->name('pages.edit');
+        Route::put('/pages/{page}',             [PageController::class, 'update'])->name('pages.update');
+        Route::patch('/pages/{page}/publish',   [PageController::class, 'publish'])->name('pages.publish');
+        Route::patch('/pages/{page}/unpublish', [PageController::class, 'unpublish'])->name('pages.unpublish');
+        Route::delete('/pages/{page}',          [PageController::class, 'destroy'])->name('pages.destroy');
     });
 });
 

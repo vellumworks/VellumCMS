@@ -26,6 +26,11 @@ class Organisation extends Model
         return $this->hasMany(User::class);
     }
 
+    public function pages(): HasMany
+    {
+        return $this->hasMany(Page::class);
+    }
+
     public function auditLog(): HasMany
     {
         return $this->hasMany(AuditLog::class);
